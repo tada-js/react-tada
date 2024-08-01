@@ -21,6 +21,7 @@ npm i react-tada
 
 Tada is a hook.
 Without needing a complicated explanation, you can **easily create a Tada**.
+<br />
 Tada는 hook입니다.
 복잡한 설명 필요 없이 **간단하게 Tada를 생성**할 수 있습니다.
 
@@ -48,6 +49,7 @@ export const useCountTada = tada<State>({ count: 0 });
 
 You can update the state as simply as setState in useState without needing to create or select a separate set function.
 However, the state should be updated **immutably.**
+<br />
 별도의 set 함수를 생성하고 선택하지 않아도 `useState`의 `setState`처럼 간단하게 상태를 업데이트할 수 있습니다.
 단, 상태는 **불변**으로 업데이트되어야 합니다.
 
