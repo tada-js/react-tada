@@ -1,6 +1,7 @@
 # react-tada🎉
 
-[![Build Size](https://img.shields.io/bundlephobia/minzip/react-tada?label=bundle%20size&style=flat&colorA=&colorB=)](https://bundlephobia.com/package/react-tada@0.0.1) [![Version](https://img.shields.io/npm/v/react-tada?style=flat&colorA=&colorB=)](https://www.npmjs.com/package/zustand)
+[![Build Size](https://img.shields.io/bundlephobia/minzip/react-tada?label=bundle%20size&style=flat&colorA=&colorB=)](https://bundlephobia.com/package/react-tada@0.0.1) [![Version](https://img.shields.io/npm/v/react-tada?style=flat&colorA=&colorB=)](https://www.npmjs.com/package/react-tada)
+https://www.npmjs.com/package/react-tada
 
 - It has a small bundle size.
 - It optimizes rendering using selector functions.
