@@ -76,6 +76,7 @@ function Counter() {
 
 You can also use a Provider.
 The Component within the CountProvider will share separate, distinct count values!
+<br />
 Provider를 사용할 수도 있습니다.
 CountProvider 컴포넌트 내의 Component 컴포넌트는 분리된, 서로 다른 count 값을 공유합니다!
 
@@ -98,4 +99,5 @@ const App = () => (
 ```
 
 In this way, you can **separate states even in the sub-tree.**
+<br />
 이처럼 **하위 트리에서도 상태를 분리**할 수 있습니다.
