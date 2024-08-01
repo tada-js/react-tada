@@ -17,7 +17,7 @@ type Store<T> = {
 export const tada = <T>(initialState: T) => {
   const TadaContext = createContext<Store<T>>(createTada(initialState));
 
-  const StoreProvider = ({
+  const TadaProvider = ({
     initialState: customInitialState,
     children,
   }: {
@@ -50,5 +50,5 @@ export const tada = <T>(initialState: T) => {
     return [selectedState, setState] as const;
   }
 
-  return { useTada, StoreProvider };
+  return { useTada, TadaProvider };
 };
