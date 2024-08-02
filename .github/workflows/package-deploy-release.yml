@@ -27,7 +27,6 @@ jobs:
       - run: rm -rf ./tsconfig.json
       - run: rm -rf ./tsconfig.package.json
       - run: rm -rf ./.eslintrc.json
-      - run: mv ./lib/src ./src
       - run: rm -rf ./lib
       - run: npm publish --access=public
         env:
