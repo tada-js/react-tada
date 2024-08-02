@@ -1,4 +1,4 @@
-# react-tada🎉
+# 🎉react-tada
 
 <p>
   <img src="tada.jpg" alt="react-tada main image">
