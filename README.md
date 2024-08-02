@@ -1,12 +1,18 @@
 # react-tada🎉
 
+<p>
+  <img src="tada.jpg" alt="react-tada main image">
+</p>
+
 [![Build Size](https://img.shields.io/bundlephobia/minzip/react-tada?label=bundle%20size&style=flat&colorA=&colorB=)](https://bundlephobia.com/package/react-tada@0.0.1) [![Version](https://img.shields.io/npm/v/react-tada?style=flat&colorA=&colorB=)](https://www.npmjs.com/package/react-tada)
 <br />
 https://www.npmjs.com/package/react-tada
 
+- react-tada is a library for state management in React.
 - It has a small bundle size.
 - It optimizes rendering using selector functions.
 - It uses a simple tada creator interface that requires no complex explanations.
+- react-tada는 리액트에서 상태 관리를 위한 라이브러리입니다.
 - 작은 번들 사이즈를 가졌습니다.
 - 선택자 함수를 사용해 렌더링 최적화합니다.
 - 복잡한 설명이 필요 없는 간단한 tada 생성자 인터페이스를 사용합니다.
@@ -47,7 +53,7 @@ export const useCountTada = tada<State>({ count: 0 });
 
 ---
 
-You can update the state as simply as setState in useState without needing to create or select a separate set function.
+You can update the state as simply as `setState` in `useState` without needing to create or select a separate set function.
 However, the state should be updated **immutably.**
 <br />
 별도의 set 함수를 생성하고 선택하지 않아도 `useState`의 `setState`처럼 간단하게 상태를 업데이트할 수 있습니다.
@@ -58,7 +64,7 @@ const useCount = useCountTada.useTada;
 
 function Counter() {
   const [count, setCount] = useCount((state) => state.count);
-    const inc = () => {
+  const inc = () => {
     setCount((prev) => ({
       ...prev,
       count: prev.count + 1,
@@ -66,9 +72,11 @@ function Counter() {
   };
 
   return (
-    <h2>{count}</h2>
+    <>
+      <h2>{count}</h2>
       <button onClick={inc}>+</button>
-  )
+    </>
+  );
 }
 ```
 
