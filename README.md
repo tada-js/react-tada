@@ -21,6 +21,8 @@ https://www.npmjs.com/package/react-tada
 npm i react-tada
 ```
 
+<br />
+
 ## First create a Tada!
 
 Tada is a hook.
