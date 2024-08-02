@@ -23,8 +23,6 @@ npm i react-tada
 
 ## First create a Tada!
 
----
-
 Tada is a hook.
 Without needing a complicated explanation, you can **easily create a Tada**.
 <br />
@@ -50,8 +48,6 @@ export const useCountTada = tada<State>({ count: 0 });
 ```
 
 ## Then use it in your component and you're done!
-
----
 
 You can update the state as simply as `setState` in `useState` without needing to create or select a separate set function.
 However, the state should be updated **immutably.**
