@@ -10,6 +10,7 @@
     "type": "git",
     "url": "https://github.com/tada-js/react-tada.git"
   },
+  "homepage": "https://react-tada-website.vercel.app/",
   "scripts": {
     "build": "rm -rf lib && tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
