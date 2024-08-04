@@ -6,7 +6,8 @@
 
 [![Build Size](https://img.shields.io/bundlephobia/minzip/react-tada?label=bundle%20size&style=flat&colorA=&colorB=)](https://bundlephobia.com/package/react-tada@0.0.1) [![Version](https://img.shields.io/npm/v/react-tada?style=flat&colorA=&colorB=)](https://www.npmjs.com/package/react-tada)
 <br />
-https://www.npmjs.com/package/react-tada
+
+## visit [website](https://react-tada-website.vercel.app/) or [npm i react-tada](https://www.npmjs.com/package/react-tada)
 
 - react-tada is a library for state management in React.
 - It has a small bundle size.
