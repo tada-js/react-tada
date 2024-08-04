@@ -24,7 +24,8 @@
     "react",
     "state",
     "state management",
-    "management"
+    "management",
+    "react-tada"
   ],
   "license": "MIT",
   "devDependencies": {
