@@ -1,7 +1,7 @@
 {
   "name": "react-tada",
   "description": "react-tada for state management in React",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "source": "./src/index.ts",
