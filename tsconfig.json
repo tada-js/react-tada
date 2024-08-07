@@ -15,5 +15,5 @@
     "skipLibCheck": true
   },
   "include": ["src/lib", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "examples/"]
 }
