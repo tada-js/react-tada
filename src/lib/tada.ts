@@ -20,7 +20,7 @@ type Store<T> = {
  * @param {T} initialState - The initial state for the store.
  * @returns {Object} An object containing the TadaProvider component and useTada hook.
  * @example
- * import { tada } from 'react-tada';
+import { tada } from 'react-tada';
 
 type State {
   count: number;
