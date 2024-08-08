@@ -13,7 +13,7 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-tada": "^0.1.10"
+    "react-tada": "^0.1.13"
   },
   "devDependencies": {
     "@types/node": "^20",
