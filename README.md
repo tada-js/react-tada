@@ -108,3 +108,94 @@ const App = () => (
 In this way, you can **separate states even in the sub-tree.**
 <br />
 이처럼 **하위 트리에서도 상태를 분리**할 수 있습니다.
+
+## Example: Simple Counter App
+
+First, create the useCountTada hook using the Tada constructor interface.
+<br />
+먼저, tada 생성자 인터페이스를 사용하여 useCountTada 훅을 생성합니다.
+
+```ts
+> tada.ts
+
+import { tada } from 'react-tada';
+
+interface CountState {
+  count: number;
+}
+
+export const useCountTada = tada<CountState>({ count: 0 });
+```
+
+Generate the count state and setCount to update the state. Additionally, add renderCount to check the number of times the component is rendered.
+<br />
+count 상태와 상태를 업데이트 할 setCount를 생성합니다. 그리고 컴포넌트가 렌더링되는 횟수를 체크하기 위해 renderCount를 추가합니다.
+
+```tsx
+>  Counter.tsx
+
+const useCount = useCountTada.useTada;
+
+const Counter = () => {
+  const [count, setCount] = useCount((state) => state.count);
+  const renderCount = useRef(1);
+
+  useEffect(() => {
+    renderCount.current += 1;
+  });
+
+  return (
+    <>
+      <div>
+        <h2>Counter Component : {count}</h2>
+        <button
+          onClick={() => {
+            setCount((prev) => ({ ...prev, count: prev.count + 1 }));
+          }}
+        >
+          +
+        </button>
+        <p>Render Count : {renderCount.current}</p>
+      </div>
+    </>
+  );
+};
+
+export default Counter;
+```
+
+Finally, create the TadaProvider using the useCountTada hook, then generate the sub-tree structures where you want to separate the state.
+<br />
+마지막으로 useCountTada 훅을 사용하여 간단하게 TadaProvider를 생성한 뒤, 상태를 분리하고 싶은 하위 트리 구조들을 생성합니다.
+
+```tsx
+> CounterPage.tsx
+
+const CountProvider = useCountTada.TadaProvider;
+
+const CounterPage = () => {
+  return (
+    <>
+      <Counter /> // count : 0
+      <Counter /> // count : 0
+      <CountProvider initialState={{ count: 10 }}>
+        <Counter /> // count : 10
+        <Counter /> // count : 10
+        <CountProvider initialState={{ count: 20 }}>
+          <Counter /> // count : 20
+        </CountProvider>
+      </CountProvider>
+    </>
+  );
+};
+
+export default CounterPage;
+```
+
+By using TadaProvider in this way, you can separate states and prevent specific tree state changes from affecting rendering and other impacts.
+<br />
+이처럼 TadaProvider를 사용하면 상태를 분리할 수 있으며, 특정 트리 상태 변경이 리렌더링과 같은 영향을 미치지 않게 할 수 있습니다.
+
+<p>
+  <img src="./examples/react-tada-examples.gif" alt="react-tada counter example image">
+</p>
